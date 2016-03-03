@@ -89,5 +89,24 @@ ans4.textContent = woodenItems;
 //Which items are made of eight or more materials? Display the name, number of items and the items it is made of.
 
 
+var eightOrMoreMaterials = items.filter(function(item){
+	if (item.materials.length >= 8) {
+		return item;
+	}
+}).map(function(item){
+	return " Title: " + item['title'] + " is made of " + item['materials'].length + " items. The items are " + item['materials'];
+});
+
+var ans5 = document.querySelector('.wrapper div:nth-child(5) .answer');
+ans5.textContent = eightOrMoreMaterials;
+
+
+
+///////////////////////////////////
+
+//How many items were made by their sellers?
+
+
+
 
 
