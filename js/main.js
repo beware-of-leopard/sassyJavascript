@@ -106,7 +106,13 @@ ans5.textContent = eightOrMoreMaterials;
 
 //How many items were made by their sellers?
 
+var madeBySellers = items.filter(function(item){
+	if (item["who_made"] === "i_did") {
+		return item;
+	}
+})
 
-
+var ans6 = document.querySelector('.wrapper div:nth-child(6) .answer');
+ans6.textContent = madeBySellers.length + " items were made by their sellers.";
 
 
