@@ -1,5 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 img {
   width: 100%; }
 
 h1 {
   font-size: 2em; }
+
+.wrapper {
+  background: #eee;
+  text-align: center; }
+  .wrapper div:not(.answer) {
+    height: 400px;
+    border-top: 1px solid grey; }
+
+.answer {
+  height: 100px; }
+
+footer {
+  background: #4a4a4f; }
