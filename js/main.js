@@ -67,4 +67,27 @@ ans3.textContent = gbpArray;
 
 
 
+///////////////////////////////////
+
+//Display a list of all items who are made of wood.
+
+var woodenItems = items.filter(function(item){
+	if (item.materials.indexOf('wood') > -1) {
+		return item;
+	}
+}).map(function(item){
+	return " Title: " + item['title'] + " ";
+});
+
+var ans4 = document.querySelector('.wrapper div:nth-child(4) .answer');
+ans4.textContent = woodenItems;
+
+
+
+///////////////////////////////////
+
+//Which items are made of eight or more materials? Display the name, number of items and the items it is made of.
+
+
+
 
