@@ -54,8 +54,16 @@ ans2.textContent = midPriceArray;
 
 //Which item has a "GBP" currency code? Display it's name and price.
 
+var gbpArray = items.filter(function(item) {
+	if (item["currency_code"] === "GBP")
+	return item;
 
+}).map(function(item){
+	return "Title: " + item['title'] + ", Price: " + item['price'];
+});
 
+var ans3 = document.querySelector('.wrapper div:nth-child(3) .answer');
+ans3.textContent = gbpArray;
 
 
 
