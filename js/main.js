@@ -18,34 +18,6 @@ ans1.innerHTML = "<li>Average Price: $"+getAvgPrice(items)+"</li>";
 
 //get an array of items that cost between $14.00 and $18.00 USD
 
-// function filterLongWords(words, i){
-//     return words.filter(function(currentWord) {
-//       return currentWord.length > i;
-//     });
-// }
-
-
-// function charFreq(string){
-//     return string.split('').reduce(function(memo, char){
-//       if (memo[char]) {
-//         memo[char] = memo[char] + 1;
-//       } else {
-//         memo[char] = 1;
-//       }
-//       return memo;
-//     }, {});
-
-// var midPriceArray = items.filter(function(item) {
-// 	if (14 < item['price'] && item['price'] < 18)
-// 	return item;
-
-// }).map(function(item){
-// 	return item['title'];
-// });
-
-
-// var ans2 = document.querySelector('.wrapper div:nth-child(2) .answer');
-// ans2.textContent = midPriceArray;
 
 var midPriceArray = items.filter(function(item) {
 	return 14 < item['price'] && item['price'] < 18;
@@ -72,16 +44,6 @@ var gbpArray = items.filter(function(item) {
 var ans3 = document.querySelector('.wrapper div:nth-child(3) .answer');
 ans3.innerHTML = gbpArray;
 
-// var gbpArray = items.filter(function(item) {
-// 	if (item["currency_code"] === "GBP")
-// 	return item;
-
-// }).forEach(function(item){
-// 	return "Title: " + item['title'] + ", Price: " + item['price'];
-// });
-
-// var ans3 = document.querySelector('.wrapper div:nth-child(3) .answer');
-// ans3.textContent = gbpArray;
 
 ///////////////////////////////////
 
